@@ -26,7 +26,8 @@ h2 {
 
 nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   left:0;
@@ -36,7 +37,12 @@ nav {
 
 .nav-list {
   display: flex,;
-  margin-right: 2rem;
+  margin-right: 50px;
+}
+
+.header-title {
+  padding: 15px;
+  margin-left: 50px;
 }
 
 ul {
@@ -45,6 +51,7 @@ ul {
 
 li {
   display: inline-block;
+  padding: 15px;
 }
 
 #welcome-section {
@@ -54,6 +61,52 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid white;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+#about {
+  display: flex;
+  height: 100vh;
+  /* text-align: center; */
+  padding: 10rem 20rem;
+  gap: 60px;
+  align-items: center;
+}
+
+#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 hr {
