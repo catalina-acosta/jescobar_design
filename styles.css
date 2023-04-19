@@ -4,6 +4,11 @@
   }
 }
 
+:root {
+  --font-color1: rgb(99, 99, 99);
+  --font-color2: #FF0000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,17 +17,26 @@
 
 a {
   text-decoration: none;
+  color: var(--font-color1);
 }
 
-h1 {
+h1, span {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   font-size: 40px;
+  font-weight: 300;
+  color: var(--font-color1);
 }
 
 h2 {
   font-size: 30px;
+  font-weight: 300;
+  color: var(--font-color1);
 }
 
+p {
+  font-size: 16px;
+  color: var(--font-color1);
+}
 
 nav {
   display: flex;
@@ -33,6 +47,7 @@ nav {
   left:0;
   width: 100%;
   z-index: 10;
+  background-color: white;
 }
 
 .nav-list {
@@ -45,8 +60,13 @@ nav {
   margin-left: 50px;
 }
 
+.accent {
+  color: var(--font-color2);
+}
+
 ul {
   list-style: none;
+  color: var(--font-color1);
 }
 
 li {
